@@ -65,8 +65,7 @@
           </div>
         </div>
       </div>
-      <button
-        class="px-3 py-2 rounded-md hover:scale-95 transition bg-slate-900 text-white hover:bg-[#FFD700] hover:text-slate-900 hidden md:block">Lets
+      <button class="px-3 py-2 rounded-md hover:scale-95 transition text-black bg-[#FFD700] hidden md:block">Lets
         Connect</button>
       <i class="fa-solid fa-bars text-3xl cursor-pointer nav-open-button md:hidden"></i>
     </div>
@@ -90,9 +89,9 @@
 
     </div>
   </nav>
-
-  <!-- hero section -->
-  <div class="py-16 md:py-8 h-auto flex min-h-screen" style="height:100%">
+  <div class="flex flex-col gap-8 md-12 lg:gap-24"">
+    <!-- hero section -->
+    <div class=" py-16 md:py-8 h-auto flex min-h-screen" style="height:100%">
     <!-- background-layer -->
     <div class="home-hero absolute inset-0 bg-cover bg-center blur-sm w-full min-h-screen z-[-10] bg-black/40"
       style="height:100%">
@@ -124,16 +123,189 @@
         <img src="./src/img/bus-ticket.png" alt="bus ticket" class="w-full -rotate-[15deg] right-0" />
       </div>
     </div>
-
-
   </div>
 
   <!-- about us -->
-  <div class="custom-container py-6 md:py-12 flex flex-col gap-6 md:gap-8">
-    
+  <div class="custom-container flex flex-col md:flex-row gap-6 md:gap-8">
+    <div class="w-full md:w-1/2 flex flex-col gap-6">
+      <h4 class="text-lg font-semibold">About Us</h4>
+      <h2 class="text-4xl font-bold text-[#181e76]">More Than 25 Years We Provide Bus Charter Service For You</h2>
+      <p>With over 25 years of trusted service, we are India’s leading bus charter solution for safe and reliable
+        travel. Whether it’s group trips, corporate events, weddings, or long-distance journeys — our commitment to
+        comfort, punctuality, and customer satisfaction has made us a preferred choice nationwide. Backed by
+        experienced
+        drivers and a well-maintained fleet, we deliver journeys that are smooth, stress-free, and tailored to your
+        needs.</p>
+      <div class="grid grid-cols-2 gap-4 md:gap-6">
+        <div class="flex gap-4">
+          <i class="h-fit fa-solid fa-check text-white bg-[#FFD700] rounded-full px-1 py-1"></i>
+          <p>Brilient Client Service</p>
+        </div>
+        <div class="flex gap-4">
+          <i class="h-fit fa-solid fa-check text-white bg-[#FFD700] rounded-full px-1 py-1"></i>
+          <p>User Experience</p>
+        </div>
+        <div class="flex gap-4">
+          <i class="h-fit fa-solid fa-check text-white bg-[#FFD700] rounded-full px-1 py-1"></i>
+          <p>24/7 Support</p>
+        </div>
+        <div class="flex gap-4">
+          <i class="h-fit fa-solid fa-check text-white bg-[#FFD700] rounded-full px-1 py-1"></i>
+          <p>Big Data & Analytics</p>
+        </div>
+        <div class="flex gap-4">
+          <i class="h-fit fa-solid fa-check text-white bg-[#FFD700] rounded-full px-1 py-1"></i>
+          <p>Free Consultation</p>
+        </div>
+        <div class="flex gap-4">
+          <i class="h-fit fa-solid fa-check text-white bg-[#FFD700] rounded-full px-1 py-1"></i>
+          <p>Free Tips and Advice</p>
+        </div>
+      </div>
+      <button
+        class="group py-2 rounded-md hover:scale-95 transition w-full md:w-fit px-6 flex gap-2 items-center bg-[#FFD700] shadow-md shadow-black hover:shadow-[5px_5px_2px_black] justify-center">
+        <p>More About Us</p>
+        <i class="h-fit fa-solid fa-arrow-right group-hover:rotate-[-45deg] transition"></i>
+      </button>
+    </div>
+    <div class="w-full md:w-1/2">
+
+    </div>
   </div>
+
+  <!-- choose the bus -->
+  <div class="custom-container py-8 flex flex-col gap-8 md:gap-12">
+    <div class="flex flex-col gap-4 md:gap-6">
+      <div class="flex gap-4 items-center gap-4 md:gap-6 lg:gap-12 flex-col md:flex-row">
+        <div class="flex flex-col gap-4 w-full md:w-2/5">
+          <h4 class="text-xl font-semibold">CHOOSE THE BUS</h4>
+          <h2 class="text-5xl font-semibold text-[#181e76]">Get on the road with our best rental</h2>
+        </div>
+        <p class="w-full md:w-3/5">Choose the perfect bus for your journey. From luxury rentals to affordable options,
+          we
+          offer
+          safe, comfortable,
+          and reliable buses for every occasion. Whether it’s a family trip, corporate event, or group travel — get on
+          the
+          road with the best bus rental services.</p>
+      </div>
+      <!-- for swiper -->
+      <div class="cursor-grab">
+        <div class="swiper mySwiper relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex flex-col">
+              <div class="border w-full aspect-[16/9]">
+                <img src="" alt="">
+              </div>
+              <div class="p-4 flex flex-col gap-2">
+                <h3 class="text-2xl font-semibold text-[#181e76]">Intercity Volvo AC Bus</h3>
+                <p>Travel between cities with ultimate comfort in our Volvo AC buses. Perfect for group journeys with
+                  luxury seating and smooth rides.</p>
+                <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col">
+              <div class="border w-full aspect-[16/9]">
+                <img src="" alt="">
+              </div>
+              <div class="p-4 flex flex-col gap-2">
+                <h3 class="text-2xl font-semibold text-[#181e76]">Weekend Getaway Coach</h3>
+                <p>Planning a quick escape? Our weekend special coaches are ideal for short trips, hill stations,
+                  beaches,
+                  or adventure travel with friends and family.</p>
+                <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col">
+              <div class="border w-full aspect-[16/9]">
+                <img src="" alt="">
+              </div>
+              <div class="p-4 flex flex-col gap-2">
+                <h3 class="text-2xl font-semibold text-[#181e76]">Pilgrimage & Temple Tours Bus</h3>
+                <p>Comfortable buses for spiritual journeys across India. Visit temples, holy cities, and religious
+                  destinations with reliable service and experienced drivers.</p>
+                <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col">
+              <div class="border w-full aspect-[16/9]">
+                <img src="" alt="">
+              </div>
+              <div class="p-4 flex flex-col gap-2">
+                <h3 class="text-2xl font-semibold text-[#181e76]">Festival Group Transport Bus</h3>
+                <p>Heading to fairs, festivals, or large events? Book our buses for hassle-free group travel with
+                  comfort
+                  and punctuality during busy seasons.</p>
+                <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
+              </div>
+            </div>
+            <div class="swiper-slide flex flex-col h-full">
+              <div class="border w-full aspect-[16/9]">
+                <img src="" alt="">
+              </div>
+              <div class="p-4 flex flex-col gap-2">
+                <h3 class="text-2xl font-semibold text-[#181e76]">Corporate Day Outing Bus</h3>
+                <p>Organize stress-free corporate outings, team-building events, or offsite trips. Spacious buses with
+                  AC,
+                  entertainment, and comfort for your employees.</p>
+                <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
+              </div>
+            </div>
+          </div>
+          <!-- Optional pagination/navigation -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-6 md:gap-12 flex-col lg:flex-row">
+      <!-- for img gallery -->
+      <div class="h-[400px] lg:h-auto w-full lg:w-1/2 grid grid-cols-2 gap-4 relative">
+        <div class="border"></div>
+        <div class="flex flex-col gap-4">
+          <div class="border h-1/2"></div>
+          <div class="border h-1/2"></div>
+        </div>
+        <div class="absolute bg-white p-4 top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 min-w-[300px]">
+          <div class="text-center flex flex-col gap-2 bg-[#f4f4f4] p-4">
+            <i class="fa-solid fa-award text-4xl bg-[#FFD700] w-fit mx-auto p-2 px-4"></i>
+            <h4 class="text-lg font-semibold">Excelent Service</h4>
+            <p>Delivering safe, reliable, comfortable, on-time, and affordable travel every day.</p>
+          </div>
+        </div>
+      </div>
+      <!-- for text -->
+      <div class="w-full lg:w-1/2 py-4 flex flex-col gap-4">
+        <h2 class="text-3xl font-semibold">We make sure every bus is in excellent shape</h2>
+        <p>Our commitment starts from the garage itself. Each bus goes through a detailed maintenance schedule that
+          covers mechanical diagnostics, safety system testing, and routine servicing. Our expert technicians monitor
+          engine performance, brake systems, tire health, and suspension regularly. We also follow
+          manufacturer-recommended service intervals strictly, ensuring every part functions at its best. Before every
+          trip, mandatory pre-departure checks are conducted, so our buses deliver reliable performance, maximum
+          comfort, and complete safety on every road.</p>
+        <div class="grid gap-2 grid-cols-2">
+          <div class="flex gap-4">
+            <i class="fa-solid fa-check text-[#FFD700]"></i>
+            <p>Regular Mechanical Inspections</p>
+          </div>
+          <div class="flex gap-4">
+            <i class="fa-solid fa-check text-[#FFD700]"></i>
+            <p>Deep Cleaning & Sanitization</p>
+          </div>
+          <div class="flex gap-4">
+            <i class="fa-solid fa-check text-[#FFD700]"></i>
+            <p>Comfort-First Maintenance</p>
+          </div>
+          <div class="flex gap-4">
+            <i class="fa-solid fa-check text-[#FFD700]"></i>
+            <p>Emergency-Ready Checks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- our services -->
-  <div class="custom-container py-6 md:py-12 flex flex-col gap-6 md:gap-8">
+  <div class="custom-container flex flex-col gap-6 md:gap-8">
     <h4 class="text-center font-semibold text-xl">Our Service</h4>
     <h2 class="text-5xl font-bold text-center text-[#181e76]">We Provide Best Services For You</h2>
     <p class="text-center">We provide the best bus services tailored for your needs — whether it's city rides,
@@ -157,7 +329,8 @@
         <div class="bg-[#f4f4f4] flex flex-col gap-4 p-6 text-center">
           <i class="fa-solid fa-school-bus"></i>
           <h3 class="text-2xl font-semibold">Wedding Guest Transportation</h3>
-          <p>Hassle-free wedding guest transportation with premium buses. Ensure smooth, comfortable, and timely travel
+          <p>Hassle-free wedding guest transportation with premium buses. Ensure smooth, comfortable, and timely
+            travel
             for your special day.</p>
           <button class="flex mx-auto items-center gap-2 group"><span>Learn More</span><i
               class="fa-solid fa-arrow-up rotate-[90deg] transition group-hover:rotate-[45deg]"></i></button>
@@ -177,7 +350,8 @@
         <div class="bg-[#f4f4f4] flex flex-col gap-4 p-6 text-center">
           <i class="fa-solid fa-school-bus"></i>
           <h3 class="text-2xl font-semibold">Private Travelers</h3>
-          <p>Book private bus rentals for families or groups. Flexible, convenient, and reliable travel tailored to your
+          <p>Book private bus rentals for families or groups. Flexible, convenient, and reliable travel tailored to
+            your
             personal needs.</p>
           <button class="flex mx-auto items-center gap-2 group"><span>Learn More</span><i
               class="fa-solid fa-arrow-up rotate-[90deg] transition group-hover:rotate-[45deg]"></i></button>
@@ -206,87 +380,9 @@
     </div>
   </div>
 
-  <!-- choose the bus -->
-  <div class="custom-container py-6 md:py-12 flex flex-col gap-4 md:gap-8">
-    <div class="flex gap-4 items-center gap-4 md:gap-6 lg:gap-12 flex-col md:flex-row">
-      <div class="flex flex-col gap-4 w-full md:w-2/5">
-        <h4 class="text-xl font-semibold">CHOOSE THE BUS</h4>
-        <h2 class="text-5xl font-semibold text-[#181e76]">Get on the road with our best rental</h2>
-      </div>
-      <p class="w-full md:w-3/5">Choose the perfect bus for your journey. From luxury rentals to affordable options, we
-        offer
-        safe, comfortable,
-        and reliable buses for every occasion. Whether it’s a family trip, corporate event, or group travel — get on the
-        road with the best bus rental services.</p>
-    </div>
 
-    <!-- for swiper -->
-    <div>
-      <div class="swiper mySwiper relative">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide flex flex-col">
-            <div class="border w-full aspect-[16/9]">
-              <img src="" alt="">
-            </div>
-            <div class="p-4 flex flex-col gap-2">
-              <h3 class="text-2xl font-semibold text-[#181e76]">Intercity Volvo AC Bus</h3>
-              <p>Travel between cities with ultimate comfort in our Volvo AC buses. Perfect for group journeys with
-                luxury seating and smooth rides.</p>
-              <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
-            </div>
-          </div>
-          <div class="swiper-slide flex flex-col">
-            <div class="border w-full aspect-[16/9]">
-              <img src="" alt="">
-            </div>
-            <div class="p-4 flex flex-col gap-2">
-              <h3 class="text-2xl font-semibold text-[#181e76]">Weekend Getaway Coach</h3>
-              <p>Planning a quick escape? Our weekend special coaches are ideal for short trips, hill stations, beaches,
-                or adventure travel with friends and family.</p>
-              <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
-            </div>
-          </div>
-          <div class="swiper-slide flex flex-col">
-            <div class="border w-full aspect-[16/9]">
-              <img src="" alt="">
-            </div>
-            <div class="p-4 flex flex-col gap-2">
-              <h3 class="text-2xl font-semibold text-[#181e76]">Pilgrimage & Temple Tours Bus</h3>
-              <p>Comfortable buses for spiritual journeys across India. Visit temples, holy cities, and religious
-                destinations with reliable service and experienced drivers.</p>
-              <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
-            </div>
-          </div>
-          <div class="swiper-slide flex flex-col">
-            <div class="border w-full aspect-[16/9]">
-              <img src="" alt="">
-            </div>
-            <div class="p-4 flex flex-col gap-2">
-              <h3 class="text-2xl font-semibold text-[#181e76]">Festival Group Transport Bus</h3>
-              <p>Heading to fairs, festivals, or large events? Book our buses for hassle-free group travel with comfort
-                and punctuality during busy seasons.</p>
-              <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
-            </div>
-          </div>
-          <div class="swiper-slide flex flex-col h-full">
-            <div class="border w-full aspect-[16/9]">
-              <img src="" alt="">
-            </div>
-            <div class="p-4 flex flex-col gap-2">
-              <h3 class="text-2xl font-semibold text-[#181e76]">Corporate Day Outing Bus</h3>
-              <p>Organize stress-free corporate outings, team-building events, or offsite trips. Spacious buses with AC,
-                entertainment, and comfort for your employees.</p>
-              <button class="border text-center w-full py-2 bg-[#FFD700]">View Details</button>
-            </div>
-          </div>
-        </div>
-        <!-- Optional pagination/navigation -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-
-  </div>
   <div class="min-h-screen"></div>
+  </div>
 </body>
 
 </html>
