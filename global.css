@@ -10,17 +10,6 @@
   max-width: 1200px !important;
   margin: auto !important;  
 }  
-  
-.home-hero {
-  background: url("./src/img/hero-bg-bus-img.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.swiper-slide{
-  height:100%;
-}
 
 
 @media(max-width:676px){

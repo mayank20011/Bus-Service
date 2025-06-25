@@ -1,0 +1,13 @@
+.home-hero {
+  background: url("../../img/hero-bg-bus-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-roadBg {
+  background: url("../../img/road-top-view.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
