@@ -1,5 +1,5 @@
 *{
-  border:1px solid green;      
+  /* border:1px solid green;       */
 } 
  
 .custom-container {
@@ -10,6 +10,9 @@
   
 .home-hero {
   background: url("./src/img/hero-bg-bus-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media(max-width:676px){
