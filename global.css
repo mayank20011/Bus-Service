@@ -1,13 +1,19 @@
-.home-hero{
-  background: url('./src/img/hero-bg-bus-img.jpg');
+*{
+  border:1px solid green;      
+} 
+ 
+.custom-container {
+  width: 80% !important;
+  max-width: 1200px !important;
+  margin: auto !important;  
+}  
+  
+.home-hero {
+  background: url("./src/img/hero-bg-bus-img.jpg");
 }
 
-*{
-  border:1px solid green;     
-} 
-
-.custom-container{
-  width:80%; 
-  max-width: 1200px;
-  margin:auto;
+@media(max-width:676px){
+  .custom-container{
+    width:90%;
+  }
 }
