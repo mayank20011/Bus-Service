@@ -17,6 +17,7 @@ document.querySelector(".nav-open-button").addEventListener("click", () => {
 
 const closeMobileNavButton = document.querySelector("#closeMobileNav");
 
+
 closeMobileNavButton.addEventListener("click", () => {
   mobileNav.classList.add("-translate-x-full");
 });

@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="./src/pages/Home/home.css">
   <!-- Your custom JS file -->
   <script src="./global.js" defer></script>
-  <script src="./src/pages/Home/busSwiper.js" defer></script>
+  <script src="./src/pages/Home/home.js" defer></script>
 </head>
 
 
@@ -37,7 +37,7 @@
         <div class="group flex flex-col items-center">
           <a class="" href="">Home</a>
           <div
-            class="h-[3px] bg-white group-hover:bg-[#FFD700] h-0 w-0 rounded-full group-hover:w-full transition-width duration-300 overflow-hidden">
+            class="h-[3px] group-hover:bg-[#FFD700] h-0 w-full bg-[#FFD700]  rounded-full group-hover:w-full transition-width duration-300 overflow-hidden">
           </div>
         </div>
         <div class="group flex flex-col items-center">
@@ -89,17 +89,16 @@
 
     </div>
   </nav>
-  <div class="flex flex-col gap-8 md-12 lg:gap-24"">
-    
+
+<div class="flex flex-col gap-8 md-12 lg:gap-24"">
     <!-- hero section -->
-    <div class=" py-16 md:py-8 h-auto flex min-h-screen" style="height:100%">
+  <div class=" py-16 md:py-8 h-auto flex min-h-screen" style="height:100%">
     <!-- background-layer -->
     <div class="home-hero absolute inset-0 bg-cover bg-center blur-sm w-full min-h-screen z-[-10] bg-black/40"
       style="height:100%">
     </div>
     <!-- black tone -->
-    <div class="w-full inset-0 bg-black/40 z-0 absolute top-0" style="height:100%">
-    </div>
+    <div class="w-full inset-0 bg-black/40 z-0 absolute top-0" style="height:100%"></div>
     <!-- text-layer -->
     <div class="custom-container text-white flex justify-between gap-2 md:gap-0 flex-col md:flex-row"
       style="height:100%">
@@ -119,13 +118,11 @@
         </div>
       </div>
       <div class="order-1 md:order-2 w-full md:w-1/2 flex relative md:flex-col-reverse">
-        <img src="./src/img/bus-ticket.png" alt="bus ticket"
-          class="animate-pulse w-full absolute -rotate-[30deg] right-0" />
+        <img src="./src/img/bus-ticket.png" alt="bus ticket" class="w-full absolute -rotate-[30deg] right-0" />
         <img src="./src/img/bus-ticket.png" alt="bus ticket" class="w-full -rotate-[15deg] right-0" />
       </div>
     </div>
   </div>
-
   <!-- about us -->
   <div class="custom-container flex flex-col md:flex-row gap-6 md:gap-8">
     <div class="w-full md:w-1/2 flex flex-col gap-6">
@@ -173,7 +170,6 @@
 
     </div>
   </div>
-
   <!-- choose the bus -->
   <div class="custom-container py-8 flex flex-col gap-8 md:gap-12">
     <div class="flex flex-col gap-4 md:gap-6">
@@ -299,12 +295,9 @@
             </div>
           </div>
         </div>
-        <!-- Optional pagination/navigation -->
-        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
-
   <!-- our services -->
   <div class="custom-container flex flex-col gap-6 md:gap-8">
     <h4 class="text-center font-semibold text-xl">Our Service</h4>
@@ -380,21 +373,204 @@
       </div>
     </div>
   </div>
-   
   <!-- road bg image -->
   <div class="h-[500px] home-roadBg relative flex items-center justify-center">
-    <div class="w-full inset-0 bg-black/60 z-0 absolute top-0 hover:bg-black/50 transition duration-500" style="height:100%">
+    <div class="w-full inset-0 bg-black/60 z-0 absolute top-0 hover:bg-black/50 transition duration-500"
+      style="height:100%">
     </div>
     <div class="custom-container flex flex-col gap-6 md:gap-8 lg:gap-12 z-[2]">
-     <h2 class="text-5xl font-semibold text-white text-center">COMFORT, SAFETY, AND SPEED - EVERYTHING FOR YOUR JOURNEY</h2>
-     <button class="bg-[#FFD700] w-fit text-white mx-auto p-4 font-semibold cursor-pointer hover:scale-95 transition hover:shadow-[5px_5px_1px_white] rounded-md relative">Lets Connect
-      <span class="absolute p-2 bg-red-600 rounded-full animate-ping top-0 right-0 translate-x-1/2 -translate-y-1/2 z-[-1]"></span>
-     </button>
+      <h2 class="text-5xl font-semibold text-white text-center">COMFORT, SAFETY, AND SPEED - EVERYTHING FOR YOUR JOURNEY
+      </h2>
+      <button
+        class="bg-[#FFD700] w-fit text-white mx-auto p-4 font-semibold cursor-pointer hover:scale-95 transition hover:shadow-[5px_5px_1px_white] rounded-md relative">Lets
+        Connect
+        <span
+          class="absolute p-2 bg-red-600 rounded-full animate-ping top-0 right-0 translate-x-1/2 -translate-y-1/2 z-[-1]"></span>
+      </button>
+    </div>
+  </div>
+  <!-- why choose us -->
+  <div class="custom-container gap-6 flex flex-col lg:flex-row">
+    <div class="w-full lg:w-2/5">
+      <img src="./" alt="" class="aspect-square w-full">
+    </div>
+    <div class="w-full lg:w-3/5 flex flex-col gap-6">
+      <h4 class="text-lg font-semibold text-[#181e76]">WHY CHOOSE US</h4>
+      <h2 class="text-4xl font-semibold">Discover Why We're the Best Choice</h2>
+      <p>Choosing us means choosing reliable service, professional drivers, and a fleet built for comfort and safety.
+        Experience hassle-free journeys with unmatched customer care and trusted travel solutions.</p>
+      <div
+        class="bg-[#FFD700] w-full rounded-2xl grow shadow-[5px_5px_2px_black] p-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left items-center">
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-shield-heart text-5xl"></i>
+          <h5 class="text-lg">Reliable Service</h5>
+          <p class="text-sm">Always on time with trusted reliable service.</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-id-card text-5xl"></i>
+          <h5 class="text-lg">Professional Driver</h5>
+          <p class="text-sm">Skilled, experienced drivers ensuring smooth, safe journeys.</p>
+        </div>
+        <div class="flex flex-col gap-2 md:col-span-2 lg:col-span-1 md:text-center lg:text-left">
+          <i class="fa-solid fa-couch text-5xl"></i>
+          <h5 class="text-lg">Comfort & Safety</h5>
+          <p class="text-sm">Spacious buses offering ultimate comfort and safety.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- testimonial  -->
+  <div
+    class="custom-container flex gap-12 md:gap-12 lg:gap-18 px-6 md:px-12 flex-col lg:flex-row bg-slate-100 pb-4 pt-6 lg:pt-0">
+    <div class="w-full lg:w-1/2 bg-gradient-to-tr from-orange-400 to-pink-600 relative h-fit lg:-mt-4">
+      <img src="./src/img/hero-bg-bus-img.jpg" alt=""
+        class="w-full aspect-square translate-x-[-20px] -translate-y-[20px] brightness-[80%]" />
+      <i class="fa-solid fa-quote-right absolute z-[2] text-[50px] top-[20px]
+      right-[40px] px-4 py-3 bg-[#FFD700]"></i>
+    </div>
+    <div class="w-full lg:w-1/2 flex flex-col gap-6 justify-end">
+      <h4 class="text-lg font-semibold">TESTIMONIAL</h4>
+      <h2 class="text-4xl font-semibold">What are they saying</h2>
+      <p>Discover How Our Solutions Transformed Real Clients — Real Feedback, Real Results</p>
+      <!-- for swiper -->
+      <div class="cursor-grab overflow-x-hidden shadow-xl">
+        <div class="swiper2 mySwiper2 relative ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white p-6 flex flex-col gap-4">
+              <p>“Our bus service delivers unmatched reliability and punctuality on busy intercity routes. Rahul’s team
+                ensures seamless logistics across major cities, guaranteeing comfortable and stress‑free travel for
+                every passenger.”</p>
+              <div class="flex gap-6">
+                <img src="" alt="" class="border w-[70px] h-[70px] apect-square">
+                <div class="flex flex-col gap-1 justify-center">
+                  <h6 class="text-sm font-semibold">Rahul Sharma</h6>
+                  <h6 class="text-sm font-light">Intercity Logistics Manager</h6>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bg-white p-6 flex flex-col gap-4">
+              <p>“Aman trusts this premium bus service for executive travel—every trip is ultra‑comfortable, impeccably
+                maintained, and perfectly timed. Our corporate clients consistently appreciate the elevated experience
+                on intercity executive routes.”</p>
+              <div class="flex gap-6">
+                <img src="" alt="" class="border w-[70px] h-[70px] apect-square">
+                <div class="flex flex-col gap-1 justify-center">
+                  <h6 class="text-sm font-semibold">Aman Patel</h6>
+                  <h6 class="text-sm font-light">VIP Corporate Travel Coordinator</h6>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bg-white p-6 flex flex-col gap-4">
+              <p>“Neha designs optimal schedules around this service’s strengths: consistent on-time buses, wide
+                coverage, and safe journeys. Passengers always comment on comfort and reliability throughout every
+                long-haul route.”</p>
+              <div class="flex gap-6">
+                <img src="" alt="" class="border w-[70px] h-[70px] apect-square">
+                <div class="flex flex-col gap-1 justify-center">
+                  <h6 class="text-sm font-semibold">Neha Gupta</h6>
+                  <h6 class="text-sm font-light">Senior Route Planning Specialist</h6>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bg-white p-6 flex flex-col gap-4">
+              <p>“Managing nationwide tours demands dependable transport. This service delivers timely departures,
+                spacious seating, and attentive drivers—Vikram reports satisfied tourists and flawless tour schedules
+                every single time.”</p>
+              <div class="flex gap-6">
+                <img src="" alt="" class="border w-[70px] h-[70px] apect-square">
+                <div class="flex flex-col gap-1 justify-center">
+                  <h6 class="text-sm font-semibold">Vikram Singh</h6>
+                  <h6 class="text-sm font-light">National Tour Operations Director</h6>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bg-white p-6 flex flex-col gap-4">
+              <p>“Priya highlights outstanding passenger satisfaction with this bus network: clean interiors, courteous
+                staff, real-time updates, and smooth rides. It’s the go-to transport choice for comfort‑focused
+                travelers.”</p>
+              <div class="flex gap-6">
+                <img src="" alt="" class="border w-[70px] h-[70px] apect-square">
+                <div class="flex flex-col gap-1 justify-center">
+                  <h6 class="text-sm font-semibold">Priya Rao</h6>
+                  <h6 class="text-sm font-light">Customer Experience Lead</h6>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bg-white p-6 flex flex-col gap-4">
+              <p>“As Fleet Maintenance lead, Swati praises this bus service for flawless upkeep, eco-efficient fleets,
+                and top safety standards. Every journey stays reliable, smooth, and worry-free for passengers.”</p>
+              <div class="flex gap-6">
+                <img src="" alt="" class="border w-[70px] h-[70px] apect-square">
+                <div class="flex flex-col gap-1 justify-center">
+                  <h6 class="text-sm font-semibold">Swati Nair</h6>
+                  <h6 class="text-sm font-light">Fleet Maintenance Supervisor</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="min-h-screen"></div>
+  <!-- frequently asked questions -->
+  <div class="custom-container flex flex-col lg:flex-row gap-6 md:gap-12 lg:gap-18 items-center">
+    <div class="order-2 lg:order-1  w-full lg:w-1/2 flex flex-col gap-4 justify-center">
+      <h4 class="text-lg text-semibold">QUESTIONS & ANSWER</h4>
+      <h2 class="text-4xl font-semibold">Some Frequently asked Questions</h2>
+      <div class="flex flex-col gap-6">
+        <div class="question-div flex flex-col gap-3">
+          <div class="border-b-2 border-dashed py-3 flex gap-4 items-center cursor-pointer ">
+            <i class="fa-solid fa-plus p-2 bg-slate-100 rounded-full"></i>
+            <h5 class="text-lg font-semibold hover:text-[#FFD700] transition">Can i book ticket online?</h5>
+          </div>
+          <p class="hidden px-4 md:px-6 answer-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            in culpa tempore
+            cupiditate earum iste fugiat velit nam beatae. Optio.</p>
+        </div>
+        <div class="question-div flex flex-col gap-3">
+          <div class="border-b-2 border-dashed py-3 flex gap-4 items-center cursor-pointer ">
+            <i class="fa-solid fa-plus p-2 bg-slate-100 rounded-full"></i>
+            <h5 class="text-lg font-semibold hover:text-[#FFD700] transition">Can i book ticket online?</h5>
+          </div>
+          <p class="hidden px-4 md:px-6 answer-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            in culpa tempore
+            cupiditate earum iste fugiat velit nam beatae. Optio.</p>
+        </div>
+        <div class="question-div flex flex-col gap-3">
+          <div class="border-b-2 border-dashed py-3 flex gap-4 items-center cursor-pointer ">
+            <i class="fa-solid fa-plus p-2 bg-slate-100 rounded-full"></i>
+            <h5 class="text-lg font-semibold hover:text-[#FFD700] transition">Can i book ticket online?</h5>
+          </div>
+          <p class="hidden px-4 md:px-6 answer-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            in culpa tempore
+            cupiditate earum iste fugiat velit nam beatae. Optio.</p>
+        </div>
+        <div class="question-div flex flex-col gap-3">
+          <div class="border-b-2 border-dashed py-3 flex gap-4 items-center cursor-pointer ">
+            <i class="fa-solid fa-plus p-2 bg-slate-100 rounded-full"></i>
+            <h5 class="text-lg font-semibold hover:text-[#FFD700] transition">Can i book ticket online?</h5>
+          </div>
+          <p class="hidden px-4 md:px-6 answer-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            in culpa tempore
+            cupiditate earum iste fugiat velit nam beatae. Optio.</p>
+        </div>
+        <div class="question-div flex flex-col gap-3">
+          <div class="border-b-2 border-dashed py-3 flex gap-4 items-center cursor-pointer ">
+            <i class="fa-solid fa-plus p-2 bg-slate-100 rounded-full"></i>
+            <h5 class="text-lg font-semibold hover:text-[#FFD700] transition">Can i book ticket online?</h5>
+          </div>
+          <p class="hidden px-4 md:px-6 answer-pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            in culpa tempore
+            cupiditate earum iste fugiat velit nam beatae. Optio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2 w-full lg:w-1/2">
+      <img src="./src/img/travel-suitcase.jpg" alt="Traveling Suitcase" class="w-full" />
+    </div>
   </div>
+</div>
 </body>
 
 </html>
