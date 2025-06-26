@@ -28,38 +28,38 @@
 
 
 <body class="overflow-x-hidden">
-
+  <span id="#top absolute z-[-20]"></span>
   <!-- navbar -->
   <nav class="fixed top-0 left-0 w-full bg-transparent text-slate-900 z-50 text-white" id="navbar">
     <div class="custom-container mx-auto flex justify-between items-center w-full py-2 md:py-4">
       <img src="" alt="Company Logo" />
       <div class="flex gap-4 hidden md:flex">
         <div class="group flex flex-col items-center">
-          <a class="" href="">Home</a>
+          <a class="" href="/">Home</a>
           <div
             class="h-[3px] group-hover:bg-[#FFD700] h-0 w-full bg-[#FFD700]  rounded-full group-hover:w-full transition-width duration-300 overflow-hidden">
           </div>
         </div>
         <div class="group flex flex-col items-center">
-          <a class="" href="">About Us</a>
+          <a class="" href="./about-us.html">About Us</a>
           <div
             class="h-[3px] bg-white group-hover:bg-[#FFD700] h-0 w-0 rounded-full group-hover:w-full transition-width duration-300 overflow-hidden">
           </div>
         </div>
         <div class="group flex flex-col items-center">
-          <a class="" href="">Contact Us</a>
+          <a class="" href="contact-us.html">Contact Us</a>
           <div
             class="h-[3px] bg-white group-hover:bg-[#FFD700] h-0 w-0 rounded-full group-hover:w-full  transition-width duration-300 overflow-hidden">
           </div>
         </div>
         <div class="group flex flex-col items-center">
-          <a class="" href="">Services</a>
+          <a class="" href="services.html">Services</a>
           <div
             class="h-[3px] bg-white group-hover:bg-[#FFD700] h-0 w-0 rounded-full group-hover:w-full  transition-width duration-300 overflow-hidden">
           </div>
         </div>
         <div class="group flex flex-col items-center">
-          <a class="" href="">Blogs</a>
+          <a class="blogs.html" href="">Blogs</a>
           <div
             class="h-[3px] bg-white group-hover:bg-[#FFD700] h-0 w-0 rounded-full group-hover:w-full  transition-width duration-300 overflow-hidden">
           </div>
@@ -90,7 +90,7 @@
     </div>
   </nav>
 
-<div class="flex flex-col gap-8 md-12 lg:gap-24"">
+  <div class="flex flex-col gap-8 md-12 lg:gap-24"">
     <!-- hero section -->
   <div class=" py-16 md:py-8 h-auto flex min-h-screen" style="height:100%">
     <!-- background-layer -->
@@ -570,7 +570,131 @@
       <img src="./src/img/travel-suitcase.jpg" alt="Traveling Suitcase" class="w-full" />
     </div>
   </div>
-</div>
+  </div>
+
+  <!-- button for going up -->
+  <div class="custom-container border flex flex-row-reverse go-up hidden">
+    <a href="#top" class="fixed z-[5] bottom-[100px]">
+      <i
+        class="fa-solid fa-arrow-up bottom-[50px] right-0 z-[3] text-2xl p-2 px-4 rounded-full bg-[#FFD700] shadow-xl shadow-black hover:scale-90 transition"></i>
+    </a>
+  </div>
+
+  <!-- footer -->
+  <footer class="py-6 md:py-12" style="background-color: #002c3f;">
+    <div class="flex flex-col gap-6 custom-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-2 text-white">
+        <div class="flex flex-col gap-4">
+          <img src="" alt="Logo" class="h-[50px] border">
+          <p>CARING ABOUT YOUR SAFETY WITH PROFESSIONAL DRIVERS AND MODERN BUSES</p>
+          <div class="flex gap-4 items-center">
+            <i class="fa-solid fa-location-dot text-2xl text-[#FFD700]"></i>
+            <p>Office No 19, Star Tower Sec 30, Gurugram</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <i class="fa-solid fa-phone text-2xl text-[#FFD700]"></i>
+            <div class="flex flex-col gap-2">
+              <a href="tel:+919671761787" class="hover:text-[#FFD700]">+91 9671761787</a>
+              <a href="tel:+917015010279" class="hover:text-[#FFD700]"">+91 7015010279</a>
+          </div>
+
+        </div>
+      </div>
+      <div class=" flex flex-col gap-4">
+                <div class="flex flex-col gap-4 lg:w-fit lg:mx-auto">
+                  <div class="flex gap-4 items-center">
+                    <span class="p-2 rounded-full bg-[#FFD700]"></span>
+                    <h5 class="font-semibold">Quicklinks</h5>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <span class="p-1 border rotate-[-45deg] border-black"
+                      style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                    <a href="/" class="hover:text-[#FFD700] transition">Home</a>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <span class="p-1 border rotate-[-45deg] border-black"
+                      style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                    <a href="/about-us.html" class="hover:text-[#FFD700] transition">About Us</a>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <span class="p-1 border rotate-[-45deg] border-black"
+                      style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                    <a href="./contact-us.html" class="hover:text-[#FFD700] transition">Contact Us</a>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <span class="p-1 border rotate-[-45deg] border-black"
+                      style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                    <a href="./services.html" class="hover:text-[#FFD700] transition">Services</a>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <span class="p-1 border rotate-[-45deg] border-black"
+                      style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                    <a href="./privacy-policy.html" class="hover:text-[#FFD700] transition">Privacy Policy</a>
+                  </div>
+                  <div class="flex gap-4 items-center">
+                    <span class="p-1 border rotate-[-45deg] border-black"
+                      style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                    <a href="./terms-&-conditions.html" class="hover:text-[#FFD700] transition">Terms & Conditions</a>
+                  </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-4 items-center">
+                <span class="p-2 rounded-full bg-[#FFD700]"></span>
+                <h5 class="font-semibold">Our Services</h5>
+              </div>
+              <div class="flex gap-4 items-center">
+                <span class="p-1 border rotate-[-45deg] border-black"
+                  style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                <a href="./school-bus-rental.html" class="hover:text-[#FFD700] transition">School Bus Rental</a>
+              </div>
+              <div class="flex gap-4 items-center">
+                <span class="p-1 border rotate-[-45deg] border-black"
+                  style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                <a href="./corporate-travels.html" class="hover:text-[#FFD700] transition">Corporate Travels</a>
+              </div>
+              <div class="flex gap-4 items-center">
+                <span class="p-1 border rotate-[-45deg] border-black"
+                  style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                <a href="./private-travelers.html" class="hover:text-[#FFD700] transition">Private Travelers</a>
+              </div>
+              <div class="flex gap-4 items-center">
+                <span class="p-1 border rotate-[-45deg] border-black"
+                  style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                <a href="./airport-shuttles.html" class="hover:text-[#FFD700] transition">Airport Shuttles</a>
+              </div>
+              <div class="flex gap-4 items-center">
+                <span class="p-1 border rotate-[-45deg] border-black"
+                  style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                <a href="./tour-and-excursions.html" class="hover:text-[#FFD700] transition">Tour & Excursions</a>
+              </div>
+              <div class="flex gap-4 items-center">
+                <span class="p-1 border rotate-[-45deg] border-black"
+                  style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
+                <a href="./wedding-transportation.html" class="hover:text-[#FFD700] transition">Wedding
+                  Trnasportation</a>
+              </div>
+            </div>
+            <div class="flex flex-col lg:justify-end gap-4">
+              <h5 class="text-[#FFD700] font-semibold">Lets Connect !</h5>
+              <p>Stay connected with us! Follow us on social media for updates, exculusive deals.</p>
+              <div class="grid grid-cols-4 gap-4">
+                <i
+                  class="fa-brands fa-facebook-f p-2 px-3 border rounded-full border-[#FFD700] text-[#FFD700] cursor-pointer   hover:bg-white hover:text-black transition hover:border-white text-center"></i>
+                <i
+                  class="fa-brands fa-instagram p-2 px-3 border rounded-full border-[#FFD700] text-[#FFD700] cursor-pointer   hover:bg-white hover:text-black transition hover:border-white text-center"></i>
+                <i
+                  class="fa-brands fa-linkedin p-2 px-3 border rounded-full border-[#FFD700] text-[#FFD700] cursor-pointer   hover:bg-white hover:text-black transition hover:border-white text-center"></i>
+                <i
+                  class="fa-brands fa-twitter p-2 px-3 border rounded-full border-[#FFD700] text-[#FFD700] cursor-pointer   hover:bg-white hover:text-black transition hover:border-white text-center"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-white border-t-2 border-dashed pt-6">Copyright 2025 | All rights reserved | <a
+              href="./privacy-policy.html" class="hover:text-[#FFD700] transition">Privacy Policy</a> | <a
+              href="./terms-&-conditions.html" class="hover:text-[#FFD700] transition">Terms & Conditions</a></p>
+        </div>
+  </footer>
 </body>
 
 </html>

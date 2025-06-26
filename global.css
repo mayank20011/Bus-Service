@@ -5,6 +5,10 @@
     font-family: "Poppins", sans-serif;
 } 
  
+html {
+  scroll-behavior: smooth;
+}
+
 .custom-container {
   width: 80% !important;
   max-width: 1200px !important;

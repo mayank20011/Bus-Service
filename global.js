@@ -1,11 +1,15 @@
 // common js file.
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector("#navbar");
+  const goUpButton = document.querySelector(".go-up");
+
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       navbar.classList.add("bg-[#002c3f]");
+      goUpButton.classList.remove("hidden");
     } else {
       navbar.classList.remove("bg-[#002c3f]");
+      goUpButton.classList.add("hidden");
     }
   });
 });
