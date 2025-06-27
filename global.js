@@ -63,13 +63,13 @@ desktopNavLinks.forEach((link, id) => {
 });
 
 const servicelinkcontainer = serviceLinksDesktopContainer.children[0];
-servicelinkcontainer.addEventListener("mouseleave", () => {
-  serviceLinksDesktopContainer.classList.add(
-    "hidden",
-    "opacity-0",
-    "translate-y-[100px]"
-  );
-});
+servicelinkcontainer.addEventListener("mouseleave",()=>{
+serviceLinksDesktopContainer.classList.add(
+        "hidden",
+        "opacity-0",
+        "translate-y-[100px]"
+      );
+})
 
 // for desktopservice nav links borders
 const desktopservicenavlinksa =
@@ -103,14 +103,14 @@ if (path == "/school-bus-rental.html") {
     "rounded-2xl",
     "border-[#FFD700]"
   );
-} else if (path == "/airport-shuttles.html") {
+} else if ((path == "/airport-shuttles.html")) {
   desktopservicenavlinksa[4].classList.add(
     "border",
     "border-dashed",
     "rounded-2xl",
     "border-[#FFD700]"
   );
-} else if (path == "/tour-and-excursions.html") {
+} else if ((path == "/tour-and-excursions.html")) {
   desktopservicenavlinksa[5].classList.add(
     "border",
     "border-dashed",
@@ -120,11 +120,14 @@ if (path == "/school-bus-rental.html") {
 } else {
 }
 
+
 // for mobilenav links
 
 const mobilenavLinks = document.querySelectorAll("#mobileNav a");
-mobilenavLinks.forEach((link) => {
-  if (link.pathname == path) {
+mobilenavLinks.forEach((link)=>{
+  if(link.pathname == path){
     link.classList.add("text-[#FFD700]");
   }
-});
+})
+
+console.log(path);
