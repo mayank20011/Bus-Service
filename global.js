@@ -63,54 +63,54 @@ desktopNavLinks.forEach((link, id) => {
 });
 
 const servicelinkcontainer = serviceLinksDesktopContainer.children[0];
-servicelinkcontainer.addEventListener("mouseleave",()=>{
-serviceLinksDesktopContainer.classList.add(
-        "hidden",
-        "opacity-0",
-        "translate-y-[100px]"
-      );
-})
+servicelinkcontainer.addEventListener("mouseleave", () => {
+  serviceLinksDesktopContainer.classList.add(
+    "hidden",
+    "opacity-0",
+    "translate-y-[100px]"
+  );
+});
 
 // for desktopservice nav links borders
 const desktopservicenavlinksa =
   serviceLinksDesktopContainer.querySelectorAll("a");
 const path = window.location.pathname;
-if (path == "/school-bus-rental.html") {
+if (path.includes("/school-bus-rental.html")) {
   desktopservicenavlinksa[0].classList.add(
     "border",
     "border-dashed",
     "rounded-2xl",
     "border-[#FFD700]"
   );
-} else if (path == "/wedding-transportation.html") {
+} else if (path.includes("/wedding-transportation.html")) {
   desktopservicenavlinksa[1].classList.add(
     "border",
     "border-dashed",
     "rounded-2xl",
     "border-[#FFD700]"
   );
-} else if (path == "/corporate-travels.html") {
+} else if (path.includes("/corporate-travels.html")) {
   desktopservicenavlinksa[2].classList.add(
     "border",
     "border-dashed",
     "rounded-2xl",
     "border-[#FFD700]"
   );
-} else if (path == "/private-travelers.html") {
+} else if (path.includes("/private-travelers.html")) {
   desktopservicenavlinksa[3].classList.add(
     "border",
     "border-dashed",
     "rounded-2xl",
     "border-[#FFD700]"
   );
-} else if ((path == "/airport-shuttles.html")) {
+} else if (path.includes("/airport-shuttles.html")) {
   desktopservicenavlinksa[4].classList.add(
     "border",
     "border-dashed",
     "rounded-2xl",
     "border-[#FFD700]"
   );
-} else if ((path == "/tour-and-excursions.html")) {
+} else if (path.includes("/tour-and-excursions.html")) {
   desktopservicenavlinksa[5].classList.add(
     "border",
     "border-dashed",
@@ -120,14 +120,10 @@ if (path == "/school-bus-rental.html") {
 } else {
 }
 
-
 // for mobilenav links
-
 const mobilenavLinks = document.querySelectorAll("#mobileNav a");
-mobilenavLinks.forEach((link)=>{
-  if(link.pathname == path){
+mobilenavLinks.forEach((link) => {
+  if (path == link.pathname) {
     link.classList.add("text-[#FFD700]");
   }
-})
-
-console.log(path);
+});
