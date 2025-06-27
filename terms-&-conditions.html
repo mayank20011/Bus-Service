@@ -33,7 +33,7 @@
   <nav class="fixed top-0 left-0 w-full bg-transparent text-slate-900 z-50 text-white" id="navbar">
     <div class="custom-container mx-auto flex justify-between items-center w-full py-2 md:py-4">
       <img src="" alt="Company Logo" />
-      <div class="flex gap-4 hidden md:flex">
+      <div class="flex gap-4 hidden md:flex" id="desktopNavLink">
         <div class="group flex flex-col items-center">
           <a class="" href="/">Home</a>
           <div
@@ -43,7 +43,7 @@
         <div class="group flex flex-col items-center">
           <a class="" href="/about-us.html">About Us</a>
           <div
-            class="h-[3px] group-hover:bg-[#FFD700] h-0 w-full bg-[#FFD700]  rounded-full group-hover:w-full transition-width duration-300 overflow-hidden">
+            class="h-[3px] group-hover:bg-[#FFD700] h-0 w-0 bg-[#FFD700]  rounded-full group-hover:w-full transition-width duration-300 overflow-hidden">
           </div>
 
         </div>
@@ -70,6 +70,62 @@
         Connect</button>
       <i class="fa-solid fa-bars text-3xl cursor-pointer nav-open-button md:hidden"></i>
     </div>
+    <!-- services for desktop -->
+    <div class="translate-y-[100px] opacity-0 hidden relative z-[20] w-full flex justify-center transition duration-700"
+      id="desktopservicenavlink">
+      <div
+        class="mt-2 max-w-[1000px] min-w-[700px] w-3/5 absolute p-6 bg-[#002c3f] grid md:grid-cols-2 lg:grid-cols-3 rounded-[30px] max-h-[500px] overflow-auto border-r-4 border-b-4 border-[#FFD700] hidden md:grid"
+        style="scrollbar-width: thin; scrollbar-color: #FFD700 transparent;">
+        <a href="school-bus-rental.html" class="flex gap-2 p-6 cursor-pointer group hover:scale-95 transition">
+          <img src="./src/img/school-logo.png" class="h-fit" alt="School Logo" width="50px" height="50px">
+          <div class="flex flex-col gap-1 pt-4">
+            <h6 class="group-hover:text-[#FFD700]">School Bus rental</h6>
+            <p class="text-xs">Reliable and safe school bus rentals for group trips, daily commutes, or educational
+              excursions.</p>
+          </div>
+        </a>
+        <a href="wedding-transportation.html" class="flex gap-2 p-6 cursor-pointer group hover:scale-95 transition">
+          <img src="./src/img/wedding-logo.png" class="h-fit" alt="School Bus Logo" width="50px" height="50px">
+          <div class="flex flex-col gap-1 pt-4">
+            <h6 class="group-hover:text-[#FFD700]">Wedding Transportation Bookings</h6>
+            <p class="text-xs">Hassle-free wedding transportation ensuring comfort, elegance, and timely travel for
+              guests and couples alike</p>
+          </div>
+        </a>
+        <a href="corporate-travels.html" class="flex gap-2 p-6 cursor-pointer group hover:scale-95 transition">
+          <img src="./src/img/corporate-logo.png" class="h-fit" alt="School Bus Logo" width="50px" height="50px">
+          <div class="flex flex-col gap-1 pt-4">
+            <h6 class="group-hover:text-[#FFD700]">Corporate Travels</h6>
+            <p class="text-xs">Professional, punctual corporate travel solutions designed for meetings, events,
+              conferences, and business trips.</p>
+          </div>
+        </a>
+        <a href="private-travelers.html" class="flex gap-2 p-6 cursor-pointer group hover:scale-95 transition">
+          <img src="./src/img/travel-logo.png" class="h-fit" alt="School Bus Logo" width="50px" height="50px">
+          <div class="flex flex-col gap-1 pt-4">
+            <h6 class="group-hover:text-[#FFD700]">Private Travelers</h6>
+            <p class="text-xs">Enjoy personalized, comfortable private travel services tailored for family outings,
+              events, and leisure trips.</p>
+          </div>
+        </a>
+        <a href="airport-shuttles.html" class="flex gap-2 p-6 cursor-pointer group hover:scale-95 transition">
+          <img src="./src/img/airport-logo.png" class="h-fit" alt="School Bus Logo" width="50px" height="50px">
+          <div class="flex flex-col gap-1 pt-4">
+            <h6 class="group-hover:text-[#FFD700]">Airport Shuttles</h6>
+            <p class="text-xs">Comfortable and punctual airport shuttle services ensuring stress-free pickups,
+              drop-offs, and timely transfers</p>
+          </div>
+        </a>
+        <a href="tour-and-excursions.html" class="flex gap-2 p-6 cursor-pointer group hover:scale-95 transition">
+          <img src="./src/img/bus-logo.png" class="h-fit" alt="School Bus Logo" width="50px" height="50px">
+          <div class="flex flex-col gap-1 pt-4">
+            <h6 class="group-hover:text-[#FFD700]">Tour and Excursions</h6>
+            <p class="text-xs">Memorable tours and excursions offering guided adventures, scenic views, and hassle-free
+              comfortable travel experiences.</p>
+          </div>
+        </a>
+      </div>
+    </div>
     <!-- slider for mobile nav -->
     <div
       class="top-0 left-0 fixed bg-white min-h-screen w-1/2 opacity-90 min-w-[300px] max-w-[400px] border -translate-x-full mobile-nav transition px-4 py-6 flex flex-col gap-4">
@@ -80,12 +136,19 @@
         </i>
       </div>
 
-      <div class="text-black flex flex-col gap-6">
-        <a href="/" class="w-full cursor-pointer text-[#FFD700] font-bold text-lg">Home</a>
-        <a href="./about-us.html" class="w-full cursor-pointer text-lg">About Us</a>
-        <a href="./contact-us.html" class="w-full cursor-pointer text-lg">Contact Us</a>
-        <a href="./services.html" class="w-full cursor-pointer text-lg">Services</a>
-        <a href="./blogs.html" class="w-full cursor-pointer text-lg">Blogs</a>
+      <div class="text-black flex flex-col gap-6" id="mobileNav">
+        <a href="/" class="w-full cursor-pointer text-lg flex gap-4 items-center">
+          <i class="fa-solid fa-angle-right"></i>Home</a>
+        <a href="/about-us.html" class="w-full cursor-pointer text-lg flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>About</a>
+        <a href="./contact-us.html" class="w-full cursor-pointer text-lg flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>Contact Us</a>
+        <a href="./services.html" class="w-full cursor-pointer text-lg flex gap-4 items-center"><i class="fa-solid fa-angle-down"></i>Services</a>
+        <a href="./school-bus-rental.html" class="w-full cursor-pointer text-lg pl-6 flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>School Bus Rental</a>
+        <a href="./corporate-travels.html" class="w-full cursor-pointer text-lg pl-6 flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>Corporate Travels</a>
+        <a href="./private-travelers.html" class="w-full cursor-pointer text-lg pl-6 flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>Private Travelers</a>
+        <a href="./airport-shuttles.html" class="w-full cursor-pointer text-lg pl-6 flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>Airport Shuttles</a>
+        <a href="./tour-and-excursions.html" class="w-full cursor-pointer text-lg pl-6 flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>Tour & excursions</a>
+        <a href="./wedding-transportation.html" class="w-full cursor-pointer text-lg pl-6 flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>Wedding transportation</a>
+        <a href="./blogs.html" class="w-full cursor-pointer text-lg flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i>Blogs</a>
       </div>
 
     </div>
@@ -156,7 +219,7 @@
                   <div class="flex gap-4 items-center">
                     <span class="p-1 border rotate-[-45deg] border-black"
                       style="border:3px solid #FFD700; border-top: none; border-left: none;"></span>
-                    <a href="./terms-&-conditions.html" class="hover:text-[#FFD700] transition">Terms & Conditions</a>
+                    <a href="./terms-&-conditions.html" class="text-[#FFD700] transition">Terms & Conditions</a>
                   </div>
                 </div>
             </div>
@@ -213,8 +276,8 @@
             </div>
           </div>
           <p class="text-center text-white border-t-2 border-dashed pt-6">Copyright 2025 | All rights reserved | <a
-              href="./privacy-policy.html" class="hover:text-[#FFD700] transition">Privacy Policy</a> | <a
-              href="./terms-&-conditions.html" class="hover:text-[#FFD700] transition">Terms & Conditions</a></p>
+              href="./privacy-policy.html" class="hover:text-[#FFD700] transition" id="privacyPolicy">Privacy Policy</a> | <a
+              href="./terms-&-conditions.html" class="hover:text-[#FFD700] transition" id="termsAndConditions">Terms & Conditions</a></p>
         </div>
   </footer>
 </body>
