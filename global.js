@@ -127,3 +127,22 @@ mobilenavLinks.forEach((link) => {
     link.classList.add("text-[#FFD700]");
   }
 });
+
+// for going up
+const upButton = document.querySelector(".go-up");
+upButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+  });
+});
+
+// for top margin container
+
+const topMarginContainer = document.querySelector(".top-margin-container");
+
+const navbar = document.querySelector("#navbar");
+console.log(navbar.clientHeight);
+if(topMarginContainer){
+  topMarginContainer.classList.add(`h-[${navbar.clientHeight}px]`);
+}
